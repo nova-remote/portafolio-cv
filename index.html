@@ -1,58 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <section class="container">
-            <div class="logo">
-                <a href="index.html">Devractor</a>
-            </div>
-            <button class="menu-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/></svg>
-                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/></svg>
-            </button>
-            <nav class="menu">
-                <a href="#inicio">Home</a>
-                <a href="#acerca">Acerca</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#portafolio">Portafolio</a>
-                <a href="#testimonios">Testimonios</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
-        </section>
+      <section class="container">
+        <div class="logo">
+          <a href="index.html">NovaCorel</a>
+        </div>
+        <button class="menu-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+          </svg>
+          <svg
+            class="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+            />
+          </svg>
+        </button>
+        <nav class="menu">
+          <a href="#inicio">Home</a>
+          <a href="#acerca">Acerca</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#portafolio">Portafolio</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </section>
     </header>
     <section id="inicio" class="home">
-        <h2>Home</h2>
+      <article
+        class="hero-image"
+        style="
+          --hero-image: url('assets/hero-image-home.jpg');
+          --hero-attachment: fixed;
+        "
+      >
+        <aside
+          class="hero-image-opacity"
+          style="--hero-opacity-color: var(--black-alpha-color);"
+        >
+          <div class="hero-image-content">
+            <h2
+              class="hero-image-title"
+              style="--hero-text-color: var(--white-color);"
+            >
+              Bienvenid@s<br />a mi sitio
+            </h2>
+            <a href="#contacto" class="btn">CONTÁCTAME</a>
+          </div>
+        </aside>
+      </article>
+      <h2>Home</h2>
     </section>
     <section id="acerca" class="about">
-        <h2>About</h2>
+      <article>
+        <aside class="slogan">
+          <h1>Isra Vázques</h1>
+          <h5>IJS Programador Frontend y Desarrollador de Videojuegos</h5>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            facere, nemo quibusdam amet ipsum officia aliquam illo, deleniti
+            esse est voluptatem reprehenderit harum natus similique dicta nihil.
+            Laudantium, dignissimos vel.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            eveniet, blanditiis totam dicta quisquam fugiat quaerat nemo error
+            deserunt optio repellat soluta, facilis voluptatum praesentium,
+            impedit nesciunt reiciendis sequi. Nisi.Iure nulla perferendis
+            voluptates mollitia delectus, autem dolore veritatis corrupti harum
+            eos, beatae voluptatem reprehenderit inventore laudantium? Provident
+            commodi nam culpa ipsa nemo mollitia quos deserunt voluptatibus
+            consectetur, eius autem.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+            cupiditate similique illo omnis veritatis hic necessitatibus
+            voluptatibus quidem aperiam iusto dolores aspernatur, quas soluta?
+            Labore et harum a officiis fuga!
+          </p>
+          <div>
+            <a class="btn" href="#" target="_blank" rel="noopener"
+              >DESCARGA MI CV</a
+            >
+          </div>
+        </aside>
+      </article>
+      <article>
+        <img class="gray-scale" src="assets/jonmircha.jpg" alt="jonmircha" />
+      </article>
+      <article>
+        <h2>Mis Habilidades</h2>
+        <div class="progress">
+          <p>
+            <b>Desarrollo<i>Web Frontend</i></b>
+            <b>90%</b>
+          </p>
+          <progress value="90" min="0" max="100"></progress>
+        </div>
+        <div class="progress">
+          <p>
+            <b>Diseño<i>Web</i></b>
+            <b>85%</b>
+          </p>
+          <progress value="85" min="0" max="100"></progress>
+        </div>
+        <div class="progress">
+          <p>
+            <b>Desarrollo de Videojuegos</b>
+            <b>95%</b>
+          </p>
+          <progress value="95" min="0" max="100"></progress>
+        </div>
+        <div class="progress">
+          <p>
+            <b>Desarrollo<i>Web Backend</i></b>
+            <b>70%</b>
+          </p>
+          <progress value="70" min="0" max="100"></progress>
+        </div>
+      </article>
     </section>
     <section id="servicios" class="services">
-        <h2>Servicios</h2>
+      <h2>Servicios</h2>
     </section>
     <section id="portafolio" class="portfolio">
-        <h2>Trabajos</h2>
+      <h2>Trabajos</h2>
     </section>
     <section id="testimonios" class="testimonials">
-        <h2>Testimonios</h2>
+      <h2>Testimonios</h2>
     </section>
     <section id="contacto" class="contact">
-        <h2>Contacto</h2>
+      <h2>Contacto</h2>
     </section>
     <footer class="footer">
-        <smal>
-            Sitio diseñado por <a href="https://devracor.com">@Devractor</a>
-        </smal>
+      <smal>
+        Sitio diseñado por <a href="https://devracor.com">@Devractor</a>
+      </smal>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
