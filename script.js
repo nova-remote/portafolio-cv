@@ -18,3 +18,38 @@
     $menu.classList.remove("is-active");
   });
 })(document);
+
+/**** ContactForm ****/
+
+((d) => {
+  const $form = d.querySelector('.contact-form'),
+    $loader = d.querySelector('.contact-form-loader'),
+    $response = d.querySelector('.contact-form-response');
+  
+  $form.addEventListener('submit', e => {
+    e.preventDefault();
+    $loader.classList.remove('none');
+    fetch('https://formsubmit.co/ajax/nosvazquez@gmail.com', {
+      method: 'POST',
+      body: new FormData(e.target)
+    })
+    .then((res) => (res.ok ? res.json() : Promise.reject(res)))
+    .then( json => {
+      console.log(json);
+      window.location.hash = '#gracias';
+      $form.reset();
+
+    })
+    .catch(err => {
+      console.log(err);
+      let messageError = err.statusText || 'Ocurrió un error al enviar tus comentarios. Intenta nuevamente.'
+      $response.querySelector('h3').innerHTML = `Error ${err.status}: ${messageError}`;
+      
+    }).finally(() => {
+      $loader.classList.add('none');
+      setTimeout(() => {
+        window.location.hash = '#cerrar';
+      }, 3000);
+    });
+  });
+})(document);
